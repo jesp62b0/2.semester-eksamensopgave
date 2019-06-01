@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+
+}
+
+/*
+HEX: #6393F2
+HEX: #628DFC
+HEX: #9FBB97
+HEX: #FCFFFF
+HEX: #000000
+
+*/
+
+header {
+    height: 16vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 2.5vh 2vw;
+    z-index: 2;
+    position: fixed;
+    transition: all 1s ease;
+
+}
+
+
+.headerindhold {
+    display: flex;
+    /* For at få elementer i headeren til at flexe */
+    justify-content: space-between;
+    /* Så vores elementer spredder sig ud */
+    align-items: center;
+    /* Vertikal centrering */
+    max-width: 1200px;
+    /* Max width så vi beholder vores indhold inde på midten på store skærmstørrelser */
+    margin: 0 auto;
+    /* Centrer vores inholdhold når man bruger max-width */
+
+}
+
+.splashholder {
+    background-size: cover;
+    height: 50vh;
+    background-color: green;
+    border: 5px black solid;
+
+}
+
+
+/*splashimage*/
+.quote1,
+.quote2,
+.quote3 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif cursive;
+    color: #6393F2;
+    margin-top: 2.5vh;
+    font-size: 18px;
+    font-style: italic;
+}
+
+#videowrapper {
+    display: flex;
+    justify-content: center;
+    height: 46vh;
+    height: 55vh;
+    background-color: aliceblue;
+}
+
+.video {
+
+    width: 50vh;
+    height: 46vh;
+    margin-top: 3.5vh;
+    background-size: cover;
+    background-color: black;
+    border-radius: 50px;
+    z-index: 30;
+    align-items: center;
+    box-shadow: 3px 3px 2px grey;
+
+
+
+}
+
+#infoplaceholder1,
+#infoplaceholder2,
+#infoplaceholder3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    align-items: center;
+
+}
+
+.imgboks1 {
+
+    background-color: greenyellow;
+    width: 3.5vh;
+    height: 4vh;
+    margin-bottom: 10px;
+
+}
+
+.imgboks2 {
+    width: 9vh;
+    height: 9vh;
+    background-color: red;
+
+}
+
+.textboks1,
+.textboks2,
+.textboks3 {
+
+    padding: 20vw;
+    margin-bottom: 0 auto;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+
+#imagewrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.imgholder1 {
+
+    width: 50vh;
+    height: 46vh;
+    margin-top: 3.5vh;
+    background-color: black;
+    border-radius: 50px;
+    z-index: 30;
+    align-items: center;
+    box-shadow: 3px 3px 2px grey;
+}
+
+#buttonwrapper1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.buynow {
+    height: 6vh;
+    width: 50vw;
+    background-color: blue;
+    margin-top: 2vh;
+    border-radius: 15px;
+    box-shadow: 3px 3px 2px grey;
+}
+
+.buy p {
+    font-family: "roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 2vh;
+    margin: -1vw;
+
+}
+
+.pulse {
+    margin: 8vh;
+    display: block;
+    cursor: pointer;
+    height: 6vh;
+    width: 30vw;
+    animation-name: pulse;
+    animation-direction: alternate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.pulse:hover {
+    animation: none;
+
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+        /* startposition for pilen */
+    }
+
+    to {
+        transform: scale(1.10);
+        /* slutposition for pilen, som er 15px lavere */
+    }
+}
+
+/*gawfgeafawfawfafwa*/
+
+#boxwrapper1,
+#boxwrapper2,
+#boxwrapper3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5vh;
+
+
+}
+
+#box1,
+#box2,
+#box3 {
+
+    height: 55vh;
+    width: 40vh;
+    background-color: antiquewhite;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px grey;
+
+
+}
+
+.feature1,
+.feature2,
+.feature3 {
+    height: 15vh;
+    width: 40wh;
+    background-color: aqua;
+    z-index: 100;
+    margin-top: 40vh;
+    border-radius: 0px 0px 20px 20px;
+
+}
+
+.feature1,
+.feature2,
+.feature3,
+h3 {
+    text-align: center;
+
+}
+
+.featurelogo1,
+.featurelogo2,
+.featurelogo3 {
+
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    align-items: flex-end;
+}
+
+nav {
+    width: 100%;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+a {
+    color: black;
+    padding: 3.5vh 15px;
+    /* for at få luft omkring vores elementer */
+    font-size: 10px;
+    /* Fontstørrelse */
+    /* Vores valgte font */
+    text-transform: uppercase;
+    /* Gør alle bogstaver store */
+    transition: all 0.3s ease;
+
+    /* Sætter transition på vores hover */
+}
+
+.logo {
+    width: 50vh;
+    padding-top: 15px;
+}
+
+.felt1,
+.felt2,
+.felt3 {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    border-radius: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .felt1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.change -felt2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .felt3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* Class som bliver sat på elementer som skal forsvinde på mobilstørrelser */
+.hide-mobile {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and (min-width:800px) {
+    .hidedesktop {
+        display: none;
+    }
+
+    .hide-mobile {
+        display: flex;
+    }
+}
