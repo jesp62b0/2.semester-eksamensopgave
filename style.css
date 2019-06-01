@@ -65,7 +65,26 @@ header {
     height: 50vh;
     background-color: green;
     border: 5px black solid;
+    display: flex;
+    justify-content: center;
+}
 
+.buynow1 {
+    height: 5vh;
+    width: 50vw;
+    margin: 40vh -35vh 0 0;
+    background-color: blue;
+    border-radius: 15px;
+    box-shadow: 3px 3px 2px grey;
+
+}
+
+.buy1 p {
+    font-family: "roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 2vh;
+    margin: -0.5vh;
+    text-align: center;
 }
 
 
@@ -167,32 +186,31 @@ header {
     text-align: center;
 }
 
-.buynow {
+.buynow2 {
     height: 6vh;
     width: 50vw;
     background-color: blue;
     margin-top: 2vh;
     border-radius: 15px;
     box-shadow: 3px 3px 2px grey;
+
 }
 
-.buy p {
+.buy2 p {
     font-family: "roboto", sans-serif;
     font-weight: bolder;
     font-size: 2vh;
     margin: -1vw;
-
 }
 
 .pulse {
-    margin: 8vh;
     display: block;
     cursor: pointer;
     height: 6vh;
     width: 30vw;
     animation-name: pulse;
     animation-direction: alternate;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
@@ -208,7 +226,7 @@ header {
     }
 
     to {
-        transform: scale(1.10);
+        transform: scale(1.05);
         /* slutposition for pilen, som er 15px lavere */
     }
 }
@@ -228,14 +246,12 @@ header {
 #box1,
 #box2,
 #box3 {
-
     height: 55vh;
     width: 40vh;
     background-color: antiquewhite;
     margin: 10px;
     border-radius: 20px;
     box-shadow: 3px 3px 2px grey;
-
 
 }
 
@@ -266,13 +282,32 @@ h3 {
     width: 20px;
     height: 20px;
     background-color: black;
-    align-items: flex-end;
+
+}
+
+footer {
+    display: grid;
+    grid-template-columns: auto;
+    height: 250px;
+    margin-top: 50px;
+    text-align: center;
+    padding: 30px;
+    grid-gap: 20px;
+
+}
+
+.some img {
+    width: 50px;
+    margin 0 5px;
 }
 
 nav {
+
     width: 100%;
     justify-content: space-around;
     padding-top: 15px;
+
+
 }
 
 a {
