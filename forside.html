@@ -34,6 +34,7 @@
 
     <div id="splashimage">
         <div class="splashholder">
+            <img src="" alt="">
             <div class="buynow1 pulse">
                 <a class="buy1" href="koeb.html">
                     <p>Køb nu</p>
@@ -152,9 +153,30 @@
 
 
     <script>
-        function myFunction(x) {
-            x.classList.toggle("change")
+        //        function myFunction(x) {
+        // x.classList.toggle("change")
+        // }
+
+        let forside;
+        document.addEventListener("DOMContentLoaded", getJson);
+        async function getJson() {
+            const url = "http://www.philipsengraphics.dk/kea/kea_2/tema_07/Eksamensopgave/wordpress/wp-json/wp/v2/forside/33";
+            const forsideJson = await fetch(url);
+            forside = await forsideJson.json();
+
+            visIndhold();
         }
+
+        function visIndhold() {
+            document.querySelector(".splashholder img").src = forside.splash.guid;
+            document.querySelector
+        }
+
+
+        //
+        // function showForside() {
+        // document.querySelector(".splashholder").style.backgroundImage = `url(${forside.splash_image.guid})`;
+        // }
         //        /* Lånt kode fra W3Schools til vores burgermenu */
         //        function myFunction(x) {
         //            x.classList.toggle("change")
@@ -179,7 +201,6 @@
         //            document.querySelector(".menu-overlay").classList.toggle("menu-transition");
         //            document.querySelector("header").style.backgroundColor = "black";
         //        })
-
     </script>
 
 </body>
