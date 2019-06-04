@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    scroll-behavior: smooth;
+    /*    scroll-behavior: smooth;*/
 }
 
 img {
@@ -70,9 +70,9 @@ header {
 }
 
 .buynow1 {
-    height: 5vh;
-    width: 50vw;
-    margin: 40vh -35vh 0 0;
+    height: 35px;
+    width: 100px;
+    margin: 40vh -65vw 0 0;
     background-color: blue;
     border-radius: 15px;
     box-shadow: 3px 3px 2px grey;
@@ -83,7 +83,7 @@ header {
     font-family: "roboto", sans-serif;
     font-weight: bolder;
     font-size: 2vh;
-    margin: -0.5vh;
+    margin: -1vh;
     text-align: center;
 }
 
@@ -91,11 +91,13 @@ header {
 /*splashimage*/
 .quote1,
 .quote2,
-.quote3 {
+.quote3,
+.quote4 {
     text-align: center;
     font-family: 'Roboto', sans-serif cursive;
     color: #6393F2;
     margin-top: 2.5vh;
+    margin-bottom: 2vh;
     font-size: 18px;
     font-style: italic;
 }
@@ -187,8 +189,8 @@ header {
 }
 
 .buynow2 {
-    height: 6vh;
-    width: 50vw;
+    height: 45px;
+    width: 110px;
     background-color: blue;
     margin-top: 2vh;
     border-radius: 15px;
@@ -200,14 +202,37 @@ header {
     font-family: "roboto", sans-serif;
     font-weight: bolder;
     font-size: 2vh;
-    margin: -1vw;
+    margin: -0.5vw;
+}
+
+#instagramholder {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 3vw;
+    justify-content: center;
+
+
+}
+
+.pic1,
+.pic2,
+.pic3,
+.pic4 {
+
+    height: 20vh;
+    width: 22vh;
+    background-color: black;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 3px 3px 2px grey;
 }
 
 .pulse {
     display: block;
     cursor: pointer;
+    /*
     height: 6vh;
     width: 30vw;
+*/
     animation-name: pulse;
     animation-direction: alternate;
     animation-duration: 3s;
@@ -251,7 +276,7 @@ header {
     background-color: antiquewhite;
     margin: 10px;
     border-radius: 20px;
-    box-shadow: 3px 3px 2px grey;
+    box-shadow: 5px 5px 5px grey;
 
 }
 
@@ -363,6 +388,9 @@ a {
     display: none;
 }
 
+
+@media only and (max-width:600px) {}
+
 @media only screen and (min-width:800px) {
     .hidedesktop {
         display: none;
@@ -370,5 +398,27 @@ a {
 
     .hide-mobile {
         display: flex;
+    }
+}
+
+@media only screen and (min-width:600px) {
+
+    a.logo {
+        width: 200px;
+        height: 240px;
+    }
+}
+
+@media only screen and (min-width:679px) {
+
+    .buynow1 {
+        margin: 40vh -80vw 0 0;
+    }
+}
+
+@media only screen and (min-width:901px) {
+
+    .buynow1 {
+        margin: 40vh -88vw 0 0;
     }
 }
