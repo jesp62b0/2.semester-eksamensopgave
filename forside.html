@@ -119,17 +119,20 @@
         </div>
     </article>
 
-    <h2 class="quote4">Bla bla bla bla</h2>
-    <div id="instagramholder">
+    <template>
 
-        <div class="pic1"></div>
-        <div class="pic2"></div>
-        <div class="pic3"></div>
-        <div class="pic4"></div>
-        <div class="pic5"></div>
-        <div class="pic6"></div>
+        <h2 class="quote4">Bla bla bla bla</h2>
+        <div id="instagramholder">
 
-    </div>
+            <div class="pic1"></div>
+            <div class="pic2"></div>
+            <div class="pic3"></div>
+            <div class="pic4"></div>
+            <div class="pic5"></div>
+            <div class="pic6"></div>
+
+        </div>
+    </template>
 
     <footer>
         <p class="kontakt">23315123 nicolas <br>
@@ -157,10 +160,10 @@
         // x.classList.toggle("change")
         // }
 
-        let forside;
+        let forside = {};
         document.addEventListener("DOMContentLoaded", getJson);
         async function getJson() {
-            const url = "http://www.philipsengraphics.dk/kea/kea_2/tema_07/Eksamensopgave/wordpress/wp-json/wp/v2/forside/33";
+            const url = "http://www.philipsengraphics.dk/kea/kea_2/tema_07/Eksamensopgave/wordpress/wp-json/wp/v2/forside/";
             const forsideJson = await fetch(url);
             forside = await forsideJson.json();
 
@@ -168,9 +171,18 @@
         }
 
         function visIndhold() {
-            document.querySelector(".splashholder img").src = forside.splash.guid;
-            document.querySelector
+            console.log(forside);
+
+            forside.forEach(indhold => {
+                document.querySelector(".splashholder img").src = indhold.splash.guid;
+                document.querySelector(".textboks1").innerHTML = indhold.infotekst1;
+            })
+
+
+
         }
+
+
 
 
         //

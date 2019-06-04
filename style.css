@@ -625,7 +625,9 @@ a {
     #picture2 img {
         border-radius: 20px;
         width: 100%;
-        position: relative;
+        width: 350px;
+        height: 350px;
+        background-color: blue;
         margin-left: 0px;
         margin-bottom: 10px;
         top: none;
@@ -633,7 +635,6 @@ a {
     }
 
     #textblock_headline h2 {
-        position: relative;
         top: 0px;
         text-align: center;
         font-size: 200%;
@@ -661,13 +662,16 @@ a {
     }
 
     .missionimage {
-        margin-left: 25px;
-        margin-right: 15px;
+        width: 350px;
+        height: 350px;
+        margin: 0 25px 0 25px;
+        background-color: aqua;
+        border-radius: 10px 10px 10px 10px;
+
     }
 
     .missionimage2 {
-        margin-left: 15px;
-        margin-right: 25px;
+        margin: 0 25px 0 25px;
     }
 
     .missiontext {
