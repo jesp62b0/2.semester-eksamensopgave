@@ -10,19 +10,16 @@ img {
     width: 100%;
 }
 
-
+h1,
+h2 {
+    opacity: 0.7;
+    font-family: 'Roboto', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p {
     font-family: 'Roboto', sans-serif;
     color: black;
-
+    opacity: 0.6;
 }
 
 /*
@@ -65,20 +62,47 @@ header {
 
     background-size: cover;
     height: 50vh;
-    border: 5px black solid;
     display: flex;
     text-align: center;
+    margin-top: auto;
 
 
 }
 
+.splashh1 {
+    font-family: 'Roboto bold', sans-serif;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.splashtekst {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 20vw 20vw 10vw 20vw;
+    ;
+    margin-bottom: 0 auto;
+    margin-top: -10vh;
+    text-align: center;
+    letter-spacing: 1.5px;
+    opacity: 0.6;
+
+}
+
+#buttonwrapper1,
+#buttonwrapper2 {
+    display: flex;
+    justify-content: center;
+}
+
 .buynow1 {
-    height: 35px;
-    width: 100px;
-    margin: 40vh -65vw 0 0;
+    height: 45px;
+    width: 110px;
     background-color: blue;
     border-radius: 15px;
     box-shadow: 3px 3px 2px grey;
+    margin-bottom: 3vh;
+
 
 }
 
@@ -86,7 +110,7 @@ header {
     font-family: "roboto", sans-serif;
     font-weight: bolder;
     font-size: 2vh;
-    margin: -1vh;
+    margin: -0.5vh;
     text-align: center;
 }
 
@@ -143,14 +167,64 @@ header {
 
 .imgboks1 {
 
-    background-color: greenyellow;
-    width: 3.5vh;
-    height: 4vh;
-    margin-bottom: 10px;
+    text-align: center;
 
 }
 
+.imgboks1 img {
+
+    margin-top: 8vh;
+    background-size: cover;
+    width: 20%;
+    height: auto;
+}
+
 .imgboks2 {
+    text-align: center;
+
+}
+
+.imgboks2 img {
+    background-size: cover;
+    width: 68%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.imgboks3 {
+    text-align: center;
+}
+
+.imgboks3 img {
+    margin-top: 8vh;
+    background-size: cover;
+    width: 20%;
+    height: auto;
+}
+
+.imgboks4 {
+    text-align: center;
+}
+
+.imgboks4 img {
+    margin-top: 2.5vh;
+    background-size: cover;
+    width: 68%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.imgboks5 {
+    width: 9vh;
+    height: 9vh;
+    background-color: green;
+
+}
+
+.imgboks6 {
     width: 9vh;
     height: 9vh;
     background-color: red;
@@ -163,10 +237,10 @@ header {
 
     padding: 20vw;
     margin-bottom: 0 auto;
+    margin-top: -10vh;
     text-align: center;
     letter-spacing: 1.5px;
 }
-
 
 #imagewrapper {
     display: flex;
@@ -174,20 +248,19 @@ header {
 }
 
 .imgholder1 {
-
-    width: 50vh;
-    height: 46vh;
-    margin-top: 3.5vh;
-    background-color: black;
-    border-radius: 50px;
-    z-index: 30;
-    align-items: center;
-    box-shadow: 3px 3px 2px grey;
+    text-align: center;
 }
 
-#buttonwrapper1 {
-    display: flex;
-    justify-content: center;
+.imgholder1 img {
+
+    background-size: cover;
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#buttonwrapper2 {
     text-align: center;
 }
 
@@ -205,7 +278,7 @@ header {
     font-family: "roboto", sans-serif;
     font-weight: bolder;
     font-size: 2vh;
-    margin: -0.5vw;
+    margin: -0.5vh;
 }
 
 #instagramholder {
@@ -229,35 +302,6 @@ header {
     box-shadow: 3px 3px 2px grey;
 }
 
-.pulse {
-    display: block;
-    cursor: pointer;
-    /*
-    height: 6vh;
-    width: 30vw;
-*/
-    animation-name: pulse;
-    animation-direction: alternate;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
-
-.pulse:hover {
-    animation: none;
-
-}
-
-@keyframes pulse {
-    from {
-        transform: scale(1);
-        /* startposition for pilen */
-    }
-
-    to {
-        transform: scale(1.05);
-        /* slutposition for pilen, som er 15px lavere */
-    }
-}
 
 /*gawfgeafawfawfafwa*/
 
