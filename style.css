@@ -6,14 +6,19 @@
     /*    scroll-behavior: smooth;*/
 }
 
+
 img {
     width: 100%;
 }
 
-h1,
-h2 {
+h1 {
     opacity: 0.7;
     font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.6;
 }
 
 p {
@@ -37,7 +42,6 @@ header {
     overflow: hidden;
     padding: 2.5vh 2vw;
     z-index: 2;
-    position: fixed;
     transition: all 1s ease;
 
 }
@@ -61,12 +65,14 @@ header {
 .splashholder {
 
     background-size: cover;
-    height: 50vh;
-    display: flex;
+    height: 58vh;
     text-align: center;
     margin-top: auto;
+}
 
-
+.splashholder img {
+    width: auto;
+    height: 100%;
 }
 
 .splashh1 {
@@ -98,12 +104,14 @@ header {
 .buynow1 {
     height: 45px;
     width: 110px;
-    background-color: blue;
+    background-color: #628DFC;
     border-radius: 15px;
-    box-shadow: 3px 3px 2px grey;
-    margin-bottom: 3vh;
+    margin-bottom: 3vh
+}
 
-
+.buynow1 p {
+    color: white;
+    opacity: 1;
 }
 
 .buy1 p {
@@ -114,6 +122,22 @@ header {
     text-align: center;
 }
 
+#videowrapper {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.video {
+    border-radius: 25px;
+    overflow: hidden;
+    z-index: 1;
+    width: auto;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+
+}
 
 /*splashimage*/
 .quote1,
@@ -125,33 +149,10 @@ header {
     color: #6393F2;
     margin-top: 2.5vh;
     margin-bottom: 2vh;
-    font-size: 18px;
+    font-size: 1.5rem;
     font-style: italic;
 }
 
-#videowrapper {
-    display: flex;
-    justify-content: center;
-    height: 46vh;
-    height: 55vh;
-    background-color: aliceblue;
-}
-
-.video {
-
-    width: 50vh;
-    height: 46vh;
-    margin-top: 3.5vh;
-    background-size: cover;
-    background-color: black;
-    border-radius: 50px;
-    z-index: 30;
-    align-items: center;
-    box-shadow: 3px 3px 2px grey;
-
-
-
-}
 
 #infoplaceholder1,
 #infoplaceholder2,
@@ -231,14 +232,25 @@ header {
 
 }
 
+.infoheading1 {
+    font-size: 1.3rem;
+    padding: 10px 10px 0 50.8px
+}
+
+.infoheading2 {
+
+    font-size: 1.3rem;
+    padding: 10px
+}
+
 .textboks1,
 .textboks2,
 .textboks3 {
 
-    padding: 20vw;
+    padding: 20vw 20vw 10vw 13.7vw;
     margin-bottom: 0 auto;
     margin-top: -10vh;
-    text-align: center;
+    text-align: left;
     letter-spacing: 1.5px;
 }
 
@@ -267,11 +279,16 @@ header {
 .buynow2 {
     height: 45px;
     width: 110px;
-    background-color: blue;
+    background-color: #628DFC;
     margin-top: 2vh;
     border-radius: 15px;
     box-shadow: 3px 3px 2px grey;
 
+}
+
+.buynow2 p {
+    color: white;
+    opacity: 1;
 }
 
 .buy2 p {
