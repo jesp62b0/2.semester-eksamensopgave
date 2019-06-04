@@ -60,13 +60,16 @@ header {
 
 }
 
+
 .splashholder {
+
     background-size: cover;
     height: 50vh;
-    background-color: green;
     border: 5px black solid;
     display: flex;
-    justify-content: center;
+    text-align: center;
+
+
 }
 
 .buynow1 {
