@@ -146,8 +146,8 @@ header {
     border-radius: 25px;
     overflow: hidden;
     z-index: 1;
-    width: 80%;
-    height: 50vw;
+    width: 70%;
+    height: 40vw;
     ;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 
@@ -161,27 +161,33 @@ header {
 }
 
 #wavebreaker img {
-    width: 50%;
+    width: 100%;
 }
 
 /*splashimage*/
-.quote1,
-.quote2,
-.quote3,
-.quote4 {
+.quote1 {
     text-align: center;
     font-family: 'Ranga', cursive;
     color: black;
-    margin-top: 4vh;
+    margin-top: 2vh;
     margin-bottom: 4vh;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.quote2 {
+    text-align: center;
+    font-family: 'Ranga', cursive;
+    color: black;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+    font-size: 2rem;
     font-style: italic;
 }
 
 
 #infoplaceholder1,
-#infoplaceholder2,
-#infoplaceholder3 {
+#infoplaceholder2 {
     width: 100%;
     height: 100%;
     display: flex;
@@ -207,7 +213,6 @@ header {
 
 .imgboks2 {
     text-align: center;
-
 }
 
 .imgboks2 img {
@@ -250,12 +255,7 @@ header {
 
 }
 
-.imgboks6 {
-    width: 9vh;
-    height: 9vh;
-    background-color: red;
-
-}
+.imgboks6 {}
 
 .infoheading1 {
     font-size: 1.3rem;
@@ -275,7 +275,34 @@ header {
     margin-bottom: 0 auto;
     margin-left: 80px;
     margin-right: 80px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.howtobox1 {
+    margin-bottom: 0 auto;
+    margin-top: 11vw;
+    margin-left: 6vw;
+    margin-right: 11.5vw;
+    text-align: right;
+    letter-spacing: 1.5px;
+}
+
+.howtobox2 {
+    margin-bottom: 0 auto;
+    margin-left: 11.5vw;
+    margin-right: 6vw;
+    padding-top: 8vw;
+    padding-bottom: 8vw;
     text-align: left;
+    letter-spacing: 1.5px;
+}
+
+.howtobox3 {
+    margin-bottom: 0 auto;
+    margin-left: 6vw;
+    margin-right: 11.5vw;
+    text-align: right;
     letter-spacing: 1.5px;
 }
 
@@ -327,7 +354,7 @@ header {
 }
 
 #turtlebreaker img {
-    width: 70%;
+    width: 40%;
 }
 
 .featureheading {
@@ -343,10 +370,17 @@ header {
 
 
 .feature1 {
-    margin-top: 50px;
+    margin-top: 2vh;
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+
+}
+
+#infoplaceholder3 h2 {
+    font-size: 1.3em;
 }
 
 
@@ -489,16 +523,41 @@ a {
 
 /*MEDIA QUERIES*/
 
+
+
 @media screen and (min-width: 500px) {
+    .feature1{
+    width: 100%;
+    }
+}
 
+@media screen and (min-width: 700px) {
+    .feature1{
+    width: 70%;
+    }
+}
+
+
+
+@media screen and (min-width: 880px) {
+    .feature1{
+    width: 60%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .feature1{
+    width: 50%;
+    }
+}
     #wavebreaker {
-    text-align: center;
-    padding-top: 10vh;
-}
+        text-align: center;
+        padding-top: 10vh;
+    }
 
-#wavebreaker img {
-    width: 30%;
-}
+    #wavebreaker img {
+        width: 40%;
+    }
 
     .splashtekst {
         padding-right: 60px;
@@ -506,31 +565,53 @@ a {
     }
 
     #splashimage {
-        padding-left: 30px
+        padding-top: 7vw
     }
-
-}
 
 @media screen and (min-width: 700px) {
 
-    .infoheading1 {
-    font-size: 1.3rem;
-    padding: 20px;
-    text-align: left;
-}
+    .quote1 {
+        text-align: center;
+        font-family: 'Ranga', cursive;
+        color: black;
+        margin-top: 25vh;
+        margin-bottom: 4vh;
+        font-size: 2rem;
+        font-style: italic;
+    }
 
-.infoheading2 {
-    font-size: 1.3rem;
-    padding: 20px;
-    text-align: left;
-}
+    .quote2 {
+        text-align: center;
+        font-family: 'Ranga', cursive;
+        color: black;
+        margin-top: 25vh;
+        margin-bottom: 4vh;
+        font-size: 2rem;
+        font-style: italic;
+    }
+
+    #splashright {
+        margin-top: 5vw;
+    }
+
+    .infoheading1 {
+        font-size: 1.3rem;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .infoheading2 {
+        font-size: 1.3rem;
+        padding: 20px;
+        text-align: left;
+    }
 
     #infoplaceholder1 {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: row;
-        margin-top: 14vh;
+        margin-top: 7vh;
         align-items: center;
 
     }
@@ -540,17 +621,17 @@ a {
         height: 100%;
         display: flex;
         flex-direction: row-reverse;
-        margin-top: 20vh;
+        margin-top: 7vh;
         align-items: center;
 
     }
 
-    .infoheading1{
+    .infoheading1 {
         padding: 0px;
         padding-bottom: 20px;
     }
 
-    .explainer1 p{
+    .explainer1 p {
         margin: 0;
     }
 
@@ -560,6 +641,9 @@ a {
         padding-left: 1vw;
         padding-right: 0vw;
     }
+
+
+
 
     .theimage {
         padding: 0px;
@@ -571,12 +655,12 @@ a {
     }
 
 
-    .infoheading2{
+    .infoheading2 {
         padding: 0px;
         padding-bottom: 20px;
     }
 
-    .explainer2 p{
+    .explainer2 p {
         margin: 0;
     }
 
@@ -601,13 +685,13 @@ a {
         padding-left: 5vw;
     }
 
-    .imgboks1{
+    .imgboks1 {
         width: 120%;
         padding-bottom: 1vh;
         text-align: left;
     }
 
-    .imgboks3{
+    .imgboks3 {
         width: 120%;
         padding-bottom: 1vh;
         text-align: left;
@@ -615,27 +699,88 @@ a {
 
     .imgholder1 img {
 
-    background-size: cover;
-    width: 70%;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+        background-size: cover;
+        width: 60%;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    #infoplaceholder3 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #theimage3 img {
+        width: 100%;
+    }
+
+    .imgboks6 {
+        width: 100%;
+        text-align: right;
+        padding-right: 20vw;
+    }
+
+
+    .howtobox1 {
+        padding-top: 0px;
+    }
+
+    .howto1 {
+        padding-left: 10vw;
+    }
+
+    .howtobox1 {
+        margin-bottom: 0 auto;
+        margin-top: 11vw;
+        margin-left: 6vw;
+        margin-right: 3vw;
+        text-align: right;
+        letter-spacing: 1.5px;
+    }
+
+    .howtobox2 {
+        margin-bottom: 0 auto;
+        margin-left: 3vw;
+        margin-right: 6vw;
+        padding-top: 14vw;
+        padding-bottom: 12vw;
+        text-align: left;
+        letter-spacing: 1.5px;
+    }
+
+    .howtobox3 {
+        margin-bottom: 0 auto;
+        margin-left: 6vw;
+        margin-right: 3vw;
+        text-align: right;
+        letter-spacing: 1.5px;
+    }
+
+    #infoplaceholder3 {}
 }
-}
+
+/**MEDIA QUERIES FOR FEATURES SECTION**/
+
+/****/
 
 
-
-@media screen and (min-width: 740px) {
+@media screen and (min-width: 767px) {
     #splash {
         display: flex;
         justify-content: center;
     }
 
+    #splashimage img{
+        margin-top: 6vw;
+        margin-left: 6vw;
+    }
+}
     #splashright {
         padding-top: 80px;
     }
 
-}
+
 
 @media screen and (min-width: 960px) {
     #splashright {
@@ -643,10 +788,14 @@ a {
         padding-right: 60px;
         padding-top: 70px
     }
+}
 
     #splashimage img {
-        margin-left: 100px;
         height: 110%
+    }
+
+    #splashimage{
+        padding-top: 2vw;
     }
 
 
@@ -658,7 +807,8 @@ a {
         }
 
         #splashimage {
-            padding-left: 70px
+            padding-left: 70px;
+            margin-left: 0vw;
         }
 
         #splashimage img {
@@ -667,7 +817,7 @@ a {
 
     }
 
-    @media screen and (min-width: 1217px) {
+    @media screen and (min-width: 1000px) {
         #splashtekst {
             padding-left: 200px;
             padding-right: 200px;
@@ -675,12 +825,12 @@ a {
         }
 
         #splashimage img {
-            height: 120%
+            height: 140%;
         }
 
         #splashright {
-            margin-right: 150px;
-            padding-top: 70px;
+            margin-right: 3vw;
+            padding-top: 10vw;
         }
 
     }

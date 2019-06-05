@@ -14,23 +14,7 @@
 
 <body>
 
-    <header id="minheader" class="header">
-        <div class="headerindhold">
-            <a href="forside.html" class="logo"><img src="img/LastSwab-logo2.png" alt="logo"></a>
 
-            <div class="burger-menu hide-desktop" onclick="myFunction(this)">
-                <div class="felt1"></div>
-                <div class="felt2"></div>
-                <div class="felt3"></div>
-
-            </div>
-
-            <nav class="hide-mobile"></nav>
-            <a href="omos.html">Om os</a>
-            <a href="kontakt.html">Kontakt</a>
-            <a href="koeb.html">Køb nu</a>
-        </div>
-    </header>
 
     <div id="splash">
         <div id="splashimage">
@@ -81,10 +65,10 @@
                 </div>
             </div>
             <div class="explainer1">
-            <div class="imgboks1">
-                <img src="" alt=""> </div>
-            <h2 class="infoheading1"></h2>
-            <p class="textboks1"></p>
+                <div class="imgboks1">
+                    <img src="" alt=""> </div>
+                <h2 class="infoheading1"></h2>
+                <p class="textboks1"></p>
             </div>
 
         </div>
@@ -93,25 +77,47 @@
 
         <div id="infoplaceholder2">
             <div class="theimage2">
-            <div class="imgboks4">
-                <img src="" alt="">
+                <div class="imgboks4">
+                    <img src="" alt="">
                 </div>
             </div>
             <div class="explainer2">
-            <div class="imgboks3">
-                <img src="" alt="">
-            </div>
-            <h2 class="infoheading2"></h2>
-            <p class="textboks2"></p>
+                <div class="imgboks3">
+                    <img src="" alt="">
+                </div>
+                <h2 class="infoheading2"></h2>
+                <p class="textboks2"></p>
             </div>
         </div>
+        <div id="wavebreaker">
+            <img src="images/wave_breaker.png">
+        </div>
+
+
         <div id="infoplaceholder3">
-            <div class="imgboks6">
-                <img src="" alt="">
+
+            <div class="howto1">
+                <div class="howtobox1">
+                    <h2 class="howtoheading1"></h2>
+                    <p class="howtoparagraph1"></p>
+                </div>
+
+                <div class="howtobox2">
+                    <h2 class="howtoheading2"></h2>
+                    <p class="howtoparagraph2"></p>
+                </div>
+
+                <div class="howtobox3">
+                    <h2 class="howtoheading3"></h2>
+                    <p class="howtoparagraph3"></p>
+                </div>
             </div>
-            <h2 class="infoheading3"></h2>
-            <div class="imgboks5"></div>
-            <p class="textboks3"></p>
+
+            <div id="theimage3">
+                <div class="imgboks6">
+                    <img src="" alt="">
+                </div>
+            </div>
         </div>
 
     </section>
@@ -139,6 +145,7 @@
         <img src="images/turtlebreaker.png">
     </div>
 
+
     <div id="featuredheader">
         <h1 class="featureheading"></h1>
     </div>
@@ -147,33 +154,25 @@
         <div class="feature1">
             <img src="" alt="">
         </div>
-
-        <div class="feature2">
-            <img src="" alt="">
-        </div>
-
-        <div class="feature3">
-            <img src="" alt="">
-        </div>
-
-        <div class="feature4">
-            <img src="" alt="">
-        </div>
     </div>
-
-
-
     <template>
 
         <h2 class="quote4">Bla bla bla bla</h2>
+
         <div id="instagramholder">
 
-            <div class="pic1"></div>
-            <div class="pic2"></div>
-            <div class="pic3"></div>
-            <div class="pic4"></div>
-            <div class="pic5"></div>
-            <div class="pic6"></div>
+            <div class="pic1">
+                <img src="" alt="">
+            </div>
+            <div class="pic2">
+                <img src="" alt="">
+            </div>
+            <div class="pic3">
+                <img src="" alt="">
+            </div>
+            <div class="pic4">
+                <img src="" alt="">
+            </div>
 
         </div>
     </template>
@@ -226,17 +225,29 @@
                 document.querySelector(".textboks1").innerHTML = indhold.infotekst1;
                 document.querySelector(".textboks2").innerHTML = indhold.infotekst2;
                 document.querySelector(".featureheading").innerHTML = indhold.featureheading;
+
+
+                document.querySelector(".howtoheading1").innerHTML = indhold.howtoheading1;
+                document.querySelector(".howtoparagraph1").innerHTML = indhold.howtoparagraph1;
+
+                document.querySelector(".howtoheading2").innerHTML = indhold.howtoheading2;
+                document.querySelector(".howtoparagraph2").innerHTML = indhold.howtoparagraph2;
+
+                document.querySelector(".howtoheading3").innerHTML = indhold.howtoheading3;
+                document.querySelector(".howtoparagraph3").innerHTML = indhold.howtoparagraph3;
+
                 document.querySelector(".imgboks1 img").src = indhold.infografik1.guid;
                 document.querySelector(".imgboks2 img").src = indhold.infoimg1.guid;
                 document.querySelector(".imgboks3 img").src = indhold.infografik2.guid;
                 document.querySelector(".imgboks4 img").src = indhold.infoimg2.guid;
                 document.querySelector(".feature1 img").src = indhold.feature1.guid;
-                document.querySelector(".feature2 img").src = indhold.feature2.guid;
-                document.querySelector(".feature3 img").src = indhold.feature3.guid;
-                document.querySelector(".feature4 img").src = indhold.feature4.guid;
-                //                document.querySelector(".imgboks6 img").src = indhold.infoimg2.guid;
+                document.querySelector(".imgboks6 img").src = indhold.imgboks6.guid;
                 document.querySelector(".imgholder1 img").src = indhold.produktimg.guid;
                 document.querySelector(".imgholder1 img").src = indhold.produktimg.guid;
+                document.querySelector(".pic1 img").src = indhold.pic1.guid;
+                document.querySelector(".pic1 img").src = indhold.pic2.guid;
+                document.querySelector(".pic1 img").src = indhold.pic3.guid;
+                document.querySelector(".pic1 img").src = indhold.pic4.guid;
             })
 
 
@@ -275,6 +286,16 @@
         //            document.querySelector("header").style.backgroundColor = "black";
         //        })
     </script>
+
+    <!--
+    <script src="rellax.min.js"></script>
+    <script>
+        // Accepts any class name
+        var rellax = new Rellax('.imgboks2');
+        var rellax = new Rellax('.imgboks4');
+
+    </script>
+-->
 
 </body>
 
