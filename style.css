@@ -6,7 +6,10 @@
     /*    scroll-behavior: smooth;*/
 }
 
-
+a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
 img {
     width: 100%;
 }
@@ -118,6 +121,8 @@ header {
 .buynow1 p {
     color: white;
     opacity: 1;
+    padding-top: 2.6vh;
+
 }
 
 .buynow1:hover {
@@ -326,19 +331,22 @@ header {
 
 #buttonwrapper2 {
     text-align: center;
+    padding-top: 10vh;
 }
 
 .buynow2 {
-    width: 200px;
+    height: 45px;
+    width: 170px;
     background-color: #628DFC;
-    margin-top: 10vh;
     border-radius: 15px;
-
+    cursor: pointer;
 }
 
 .buynow2 p {
     color: white;
     opacity: 1;
+    padding-top: 2.2vh;
+
 }
 
 .buy2 p {
@@ -459,6 +467,7 @@ footer {
     margin 0 5px;
 }
 
+/*
 nav {
 
     width: 100%;
@@ -467,20 +476,9 @@ nav {
 
 
 }
+*/
 
-a {
-    color: black;
-    padding: 3.5vh 15px;
-    /* for at få luft omkring vores elementer */
-    font-size: 10px;
-    /* Fontstørrelse */
-    /* Vores valgte font */
-    text-transform: uppercase;
-    /* Gør alle bogstaver store */
-    transition: all 0.3s ease;
 
-    /* Sætter transition på vores hover */
-}
 
 .logo {
     width: 50vh;
@@ -706,6 +704,16 @@ a {
         box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
     }
 
+    .textboks1,
+.textboks2,
+.textboks3 {
+    margin-bottom: 0 auto;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: left;
+    letter-spacing: 1.5px;
+}
+
     #infoplaceholder3 {
         display: flex;
         flex-direction: row;
@@ -834,3 +842,195 @@ a {
         }
 
     }
+
+/**NAVBAR TEST**/
+body {
+  margin: 0;
+}
+.header-fixed {
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    line-height: 60px;
+}
+
+.navbar .logo {
+    flex: 3;
+    padding-left: 2vw;
+}
+
+.navbar .logo a {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+.navbar .logo a:hover {
+  color: grey;
+}
+
+.navbar nav {
+    flex: 8;
+}
+
+.navbar label {
+  user-select: none;
+  cursor: pointer;
+  padding: 28px 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.navbar label i {
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+  font-style: normal;
+  font-weight: normal;
+}
+.navbar label i:before,
+.navbar label i:after {
+  content: '';
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.navbar label i,
+.navbar label i:before,
+.navbar label i:after {
+  display: block;
+  background: black;
+    opacity: 0.7;
+}
+.navbar label i:before {
+  top: 5px;
+}
+.navbar label i:after {
+  top: -5px;
+}
+
+.navbar #navbar-toggle {
+  display: none;
+}
+
+.header #navbar-toggle:checked ~ .menu {
+  visibility: visible;
+  opacity: 0.99;
+}
+.header #navbar-toggle:checked ~ label {
+
+  border-radius: 50%;
+}
+.header #navbar-toggle:checked ~ label i {
+  background: transparent;
+}
+.header #navbar-toggle:checked ~ label i:before {
+  transform: rotate(-45deg);
+}
+.header #navbar-toggle:checked ~ label i:after {
+  transform: rotate(45deg);
+}
+.header #navbar-toggle:checked ~ label:not(.steps) i:before,
+.header #navbar-toggle:checked ~ label:not(.steps) i:after {
+  top: 0;
+}
+
+.navbar nav li:hover a {
+      color: #628DFC;
+      transition: all 0.3s ease-out;
+    }
+
+@media (max-width: 768px) {
+
+    .navbar .logo img {
+        width: 50%;
+    flex: 3;
+    padding-left: 2vw;
+}
+    .navbar nav {
+      visibility: hidden;
+      opacity: 0;
+      z-index: 2;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      transition: all 0.3s ease-out;
+      display: table;
+      background: white;
+    }
+    .navbar nav ul {
+      margin: 0;
+      padding: 20px 0;
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .navbar nav li {
+      display: block;
+      text-align: center;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 50px;
+      min-height: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
+    .navbar nav li:hover {
+        color: #628DFC;
+    }
+    .navbar nav li:hover a {
+      color: #628DFC;
+      transition: all 0.3s ease-out;
+    }
+    .navbar nav li a {
+      color: #212121;
+        opacity: 0.7;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar nav ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      list-style: none;
+    }
+    .navbar nav li {
+      flex: 1;
+    }
+    .navbar nav li a {
+      display: block;
+      padding: 0 8px;
+      font-size: 16px;
+      line-height: 60px;
+      color: black;
+        opacity: 0.7;
+        cursor: pointer;
+      text-decoration: none;
+    }
+
+    .navbar label {
+      display: none;
+    }
+}
+
+
+
+
+
+
