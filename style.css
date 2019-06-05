@@ -77,21 +77,26 @@ header {
 
 .splashh1 {
     font-family: 'Roboto bold', sans-serif;
+    font-size: 1.7em;
     text-align: center;
-    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
 
 }
+
+
 
 .splashtekst {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    padding: 20vw 20vw 10vw 20vw;
-    ;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
     margin-bottom: 0 auto;
-    margin-top: -10vh;
     text-align: center;
     letter-spacing: 1.5px;
     opacity: 0.6;
+    margin-left: 20px;
+    margin-right: 20px;
 
 }
 
@@ -106,12 +111,17 @@ header {
     width: 110px;
     background-color: #628DFC;
     border-radius: 15px;
-    margin-bottom: 3vh
+    margin-bottom: 3vh;
+    cursor: pointer;
 }
 
 .buynow1 p {
     color: white;
     opacity: 1;
+}
+
+.buynow1:hover{
+    background-color: #587bd5;
 }
 
 .buy1 p {
@@ -139,16 +149,25 @@ header {
 
 }
 
+#wavebreaker {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#wavebreaker img {
+    width: 50%;
+}
+
 /*splashimage*/
 .quote1,
 .quote2,
 .quote3,
 .quote4 {
     text-align: center;
-    font-family: 'Roboto', sans-serif cursive;
-    color: #6393F2;
-    margin-top: 2.5vh;
-    margin-bottom: 2vh;
+    font-family: 'Ranga', cursive;
+    color: black;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
     font-size: 1.5rem;
     font-style: italic;
 }
@@ -161,7 +180,7 @@ header {
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 10vh;
+    margin-top: 3vh;
     align-items: center;
 
 }
@@ -174,9 +193,9 @@ header {
 
 .imgboks1 img {
 
-    margin-top: 8vh;
+    margin-top: 3vh;
     background-size: cover;
-    width: 20%;
+    width: 30%;
     height: auto;
 }
 
@@ -187,7 +206,7 @@ header {
 
 .imgboks2 img {
     background-size: cover;
-    width: 68%;
+    width: 85%;
     height: auto;
     border-radius: 20px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
@@ -198,9 +217,9 @@ header {
 }
 
 .imgboks3 img {
-    margin-top: 8vh;
+    margin-top: 3vh;
     background-size: cover;
-    width: 20%;
+    width: 30%;
     height: auto;
 }
 
@@ -211,7 +230,7 @@ header {
 .imgboks4 img {
     margin-top: 2.5vh;
     background-size: cover;
-    width: 68%;
+    width: 85%;
     height: auto;
     border-radius: 20px;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
@@ -234,23 +253,23 @@ header {
 
 .infoheading1 {
     font-size: 1.3rem;
-    padding: 10px 10px 0 50.8px
+    padding: 20px;
+    text-align: center;
 }
 
 .infoheading2 {
-
     font-size: 1.3rem;
-    padding: 10px
+    padding: 20px;
+    text-align: center;
 }
 
 .textboks1,
 .textboks2,
 .textboks3 {
-
-    padding: 20vw 20vw 10vw 13.7vw;
     margin-bottom: 0 auto;
-    margin-top: -10vh;
-    text-align: left;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
     letter-spacing: 1.5px;
 }
 
@@ -277,12 +296,10 @@ header {
 }
 
 .buynow2 {
-    height: 45px;
-    width: 110px;
+    width: 200px;
     background-color: #628DFC;
-    margin-top: 2vh;
+    margin-top: 10vh;
     border-radius: 15px;
-    box-shadow: 3px 3px 2px grey;
 
 }
 
@@ -294,8 +311,42 @@ header {
 .buy2 p {
     font-family: "roboto", sans-serif;
     font-weight: bolder;
-    font-size: 2vh;
+    font-size: 3vh;
     margin: -0.5vh;
+}
+
+#turtlebreaker {
+    text-align: center;
+    padding: 60px;
+}
+
+#turtlebreaker img {
+    width: 70%;
+}
+
+.featureheading{
+    text-align: center;
+}
+
+#featureimages{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.feature1{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+
+#featureimages img{
+    width: 95%;
+
 }
 
 #instagramholder {
@@ -344,33 +395,11 @@ header {
 
 }
 
-.feature1,
-.feature2,
-.feature3 {
-    height: 15vh;
-    width: 40wh;
-    background-color: aqua;
-    z-index: 100;
-    margin-top: 40vh;
-    border-radius: 0px 0px 20px 20px;
 
-}
 
-.feature1,
-.feature2,
-.feature3,
+
 h3 {
     text-align: center;
-
-}
-
-.featurelogo1,
-.featurelogo2,
-.featurelogo3 {
-
-    width: 20px;
-    height: 20px;
-    background-color: black;
 
 }
 
