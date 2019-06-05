@@ -120,7 +120,7 @@ header {
     opacity: 1;
 }
 
-.buynow1:hover{
+.buynow1:hover {
     background-color: #587bd5;
 }
 
@@ -137,13 +137,18 @@ header {
     justify-content: center;
 
 
+
 }
+
+
 
 .video {
     border-radius: 25px;
     overflow: hidden;
     z-index: 1;
-    width: auto;
+    width: 80%;
+    height: 50vw;
+    ;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 
 
@@ -324,11 +329,11 @@ header {
     width: 70%;
 }
 
-.featureheading{
+.featureheading {
     text-align: center;
 }
 
-#featureimages{
+#featureimages {
     display: flex;
     justify-content: center;
 }
@@ -336,7 +341,7 @@ header {
 
 
 
-.feature1{
+.feature1 {
     margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
@@ -344,7 +349,7 @@ header {
 }
 
 
-#featureimages img{
+#featureimages img {
     width: 95%;
 
 }
@@ -481,324 +486,116 @@ a {
     display: none;
 }
 
+/*MEDIA QUERIES*/
 
-/*
-@media only and (max-width:600px) {}
-
-@media only screen and (min-width:800px) {
-    .hidedesktop {
-        display: none;
+@media screen and (min-width: 500px) {
+    .splashtekst {
+        padding-right: 60px;
+        padding-left: 60px;
     }
 
-    .hide-mobile {
+    #splashimage {
+        padding-left: 30px
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+
+    #infoplaceholder1,
+    #infoplaceholder2,
+    #infoplaceholder3 {
+        width: 100%;
+        height: 100%;
         display: flex;
-    }
-}
-
-@media only screen and (min-width:600px) {
-
-    a.logo {
-        width: 200px;
-        height: 240px;
-    }
-}
-
-@media only screen and (min-width:679px) {
-
-    .buynow1 {
-        margin: 40vh -80vw 0 0;
-    }
-}
-
-@media only screen and (min-width:901px) {
-
-    .buynow1 {
-        margin: 40vh -88vw 0 0;
-    }
-}
-*/
-
-
-/*MADS KODE*/
-
-#picture {
-    position: relative;
-    border-radius: 20px;
-    padding: 10px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
-    width: 450px;
-    margin-left: 100px;
-    background-color: white;
-}
-
-#picture h2 {
-    color: dodgerblue;
-    font-size: 200%;
-}
-
-#picture h1 {
-    font-size: 300%;
-}
-
-#picture p {
-    font-size: 130%;
-}
-
-#picture2 img {
-    border-radius: 20px;
-    width: 50%;
-    position: absolute;
-    margin-left: 500px;
-    top: 40px;
-}
-
-#textblock_headline h2 {
-    position: relative;
-    top: 150px;
-    text-align: center;
-    font-size: 200%;
-}
-
-
-
-#imagesection {
-    display: flex;
-    margin-top: 200px;
-}
-
-.missionimage img {
-    width: 100%;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
-}
-
-.missionimage {
-    width: 90%;
-    margin-left: 30px;
-}
-
-.missionimage2 {
-    width: 90%;
-    margin-right: 30px;
-}
-
-.missiontext {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    margin-left: 20px;
-}
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-.missiontext img {
-    align-content: center;
-    width: 20%
-}
-
-.missiontext2 {
-    margin-right: 20px;
-    margin-left: 20px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-}
-
-.missiontext2 img {
-    align-content: center;
-    width: 20%
-}
-
-#imagesection2 {
-    display: flex;
-    margin-top: 50px;
-}
-
-#imagesection3 {
-    display: flex;
-    margin-top: 50px;
-}
-
-.missionimage2 img {
-    width: 100%;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
-
-}
-
-@media screen and (max-width: 1027px) {
-    #picture2 img {
-        margin-left: 400px;
+        flex-direction: row;
+        margin-top: 3vh;
+        align-items: center;
 
     }
-}
 
-@media screen and (max-width: 860px) {
-    #picture {
-        position: relative;
-        border: 3px solid lightblue;
-        border-radius: 20px;
-        padding: 10px;
-        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
-        width: 450px;
-        margin-left: 35px;
-        background-color: white;
+    .imgboks2 {
+        width: 90%;
+        height: auto;
+        padding-left: 5vw;
+        padding-right: 0vw;
     }
 
-    #picture h2 {
-        color: dodgerblue;
-        font-size: 200%;
-    }
-
-    #picture h1 {
-        font-size: 300%;
-    }
-
-    #picture p {
-        font-size: 130%;
-    }
-
-    #picture2 img {
-        border-radius: 20px;
-        width: 50%;
-        position: absolute;
-        margin-left: 350px;
-        top: 40px;
-    }
-}
-
-
-
-#divider img {
-    width: 50%;
-    border-radius: 100px;
-}
-
-@media screen and (max-width: 700px) {
-    #picture {
-        position: relative;
-        border: none;
-        border-radius: none;
+    .theimage {
         padding: 0px;
-        box-shadow: none;
-        margin-left: 0px;
-        width: 100%;
-        background-color: white;
-        padding-top: 20px;
     }
 
-    #picture h2 {
-        font-size: 150%;
-        margin-left: 10px;
-        margin-right: 10px;
+    .explainer1 {
+        width: 230%;
+        padding-right: 5vw;
     }
-
-    #picture p {
-        font-size: 120%;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    #picture h1 {
-        font-size: 250%;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    #picture2 img {
-        border-radius: 20px;
-        width: 100%;
-        width: 350px;
-        height: 350px;
-        background-color: blue;
-        margin-left: 0px;
-        margin-bottom: 10px;
-        top: none;
-        z-index: 2;
-    }
-
-    #textblock_headline h2 {
-        top: 0px;
-        text-align: center;
-        font-size: 200%;
-    }
-
-    #imagesection {
-        display: flex;
-        flex-basis: 700px;
-        flex-wrap: wrap;
-        margin-top: 50px;
-    }
-
-    #imagesection2 {
-        display: flex;
-        flex-basis: 700px;
-        flex-wrap: wrap-reverse;
-        margin-top: 50px;
-    }
-
-    #imagesection3 {
-        display: flex;
-        flex-basis: 700px;
-        flex-wrap: wrap;
-        margin-top: 50px;
-    }
-
-    .missionimage {
-        width: 350px;
-        height: 350px;
-        margin: 0 25px 0 25px;
-        background-color: aqua;
-        border-radius: 10px 10px 10px 10px;
-
-    }
-
-    .missionimage2 {
-        margin: 0 25px 0 25px;
-    }
-
-    .missiontext {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-direction: column;
-        margin-left: 60px;
-        margin-right: 60px;
-        margin-top: 10px;
-    }
-
-    .missiontext2 {
-        margin-left: 60px;
-        margin-right: 60px;
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        flex-direction: column;
-    }
-
-    .missiontext img {
-        align-content: center;
-        width: 35%
-    }
-
-    .missiontext2 img {
-        width: 35%;
-    }
-
-
 
 
 }
 
-#divider img {
-    width: 40%;
-    border-radius: 100px;
+@media screen and (min-width: 740px) {
+    #splash {
+        display: flex;
+        justify-content: center;
+    }
+
+    #splashright {
+        padding-top: 80px;
+    }
+
 }
+
+@media screen and (min-width: 960px) {
+    #splashright {
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 70px
+    }
+
+    #splashimage img {
+        margin-left: 100px;
+        height: 110%
+    }
+
+
+    @media screen and (min-width: 700px) {
+        .explainer1 p{
+            margin-left: 10px;
+        }
+
+    }
+
+    @media screen and (min-width: 1074px) {
+        #splashright {
+            padding-left: 100px;
+            padding-right: 1px;
+
+        }
+
+        #splashimage {
+            padding-left: 70px
+        }
+
+        #splashimage img {
+            height: 110%
+        }
+
+    }
+
+    @media screen and (min-width: 1217px) {
+        #splashtekst {
+            padding-left: 200px;
+            padding-right: 200px;
+
+        }
+
+        #splashimage img {
+            height: 120%
+        }
+
+        #splashright {
+            margin-right: 150px;
+            padding-top: 70px;
+        }
+
+    }
