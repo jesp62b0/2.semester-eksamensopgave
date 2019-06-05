@@ -157,6 +157,7 @@ header {
 #wavebreaker {
     text-align: center;
     padding-top: 10px;
+    padding-bottom: 25px;
 }
 
 #wavebreaker img {
@@ -200,7 +201,7 @@ header {
 
     margin-top: 3vh;
     background-size: cover;
-    width: 30%;
+    width: 20%;
     height: auto;
 }
 
@@ -224,7 +225,7 @@ header {
 .imgboks3 img {
     margin-top: 3vh;
     background-size: cover;
-    width: 30%;
+    width: 20%;
     height: auto;
 }
 
@@ -274,7 +275,7 @@ header {
     margin-bottom: 0 auto;
     margin-left: 80px;
     margin-right: 80px;
-    text-align: center;
+    text-align: left;
     letter-spacing: 1.5px;
 }
 
@@ -489,6 +490,16 @@ a {
 /*MEDIA QUERIES*/
 
 @media screen and (min-width: 500px) {
+
+    #wavebreaker {
+    text-align: center;
+    padding-top: 10vh;
+}
+
+#wavebreaker img {
+    width: 30%;
+}
+
     .splashtekst {
         padding-right: 60px;
         padding-left: 60px;
@@ -502,22 +513,51 @@ a {
 
 @media screen and (min-width: 700px) {
 
-    #infoplaceholder1,
-    #infoplaceholder2,
-    #infoplaceholder3 {
+    .infoheading1 {
+    font-size: 1.3rem;
+    padding: 20px;
+    text-align: left;
+}
+
+.infoheading2 {
+    font-size: 1.3rem;
+    padding: 20px;
+    text-align: left;
+}
+
+    #infoplaceholder1 {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: row;
-        margin-top: 3vh;
+        margin-top: 14vh;
         align-items: center;
 
     }
 
+    #infoplaceholder2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 20vh;
+        align-items: center;
+
+    }
+
+    .infoheading1{
+        padding: 0px;
+        padding-bottom: 20px;
+    }
+
+    .explainer1 p{
+        margin: 0;
+    }
+
     .imgboks2 {
-        width: 90%;
+        width: 100%;
         height: auto;
-        padding-left: 5vw;
+        padding-left: 1vw;
         padding-right: 0vw;
     }
 
@@ -531,7 +571,59 @@ a {
     }
 
 
+    .infoheading2{
+        padding: 0px;
+        padding-bottom: 20px;
+    }
+
+    .explainer2 p{
+        margin: 0;
+    }
+
+    .imgboks4 {
+        width: 100%;
+        height: auto;
+        padding-right: 1vw;
+        padding-left: 0vw;
+    }
+
+    .theimage2 {
+        padding: 0px;
+    }
+
+    .explainer1 {
+        width: 230%;
+        padding-right: 5vw;
+    }
+
+    .explainer2 {
+        width: 230%;
+        padding-left: 5vw;
+    }
+
+    .imgboks1{
+        width: 120%;
+        padding-bottom: 1vh;
+        text-align: left;
+    }
+
+    .imgboks3{
+        width: 120%;
+        padding-bottom: 1vh;
+        text-align: left;
+    }
+
+    .imgholder1 img {
+
+    background-size: cover;
+    width: 70%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
+}
+
+
 
 @media screen and (min-width: 740px) {
     #splash {
@@ -557,13 +649,6 @@ a {
         height: 110%
     }
 
-
-    @media screen and (min-width: 700px) {
-        .explainer1 p{
-            margin-left: 10px;
-        }
-
-    }
 
     @media screen and (min-width: 1074px) {
         #splashright {
