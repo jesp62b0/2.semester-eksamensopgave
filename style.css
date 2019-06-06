@@ -397,25 +397,27 @@ header {
 
 }
 
-#instagramholder {
+#instaholder{
+    padding-right: 3vw;
+    padding-left: 3vw;
+    padding-bottom: 5vw;
+}
+#instaoverskrift{
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    padding-top: 15vh;
+    padding-bottom: 3vh;
+}
+#instagrampictures {
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 3vw;
+    grid-gap: 1vw;
     justify-content: center;
-
-
 }
 
-.pic1,
-.pic2,
-.pic3,
-.pic4 {
-
-    height: 20vh;
-    width: 22vh;
-    background-color: black;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 3px 3px 2px grey;
+#instagrampictures img{
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 
@@ -451,16 +453,7 @@ h3 {
 
 }
 
-footer {
-    display: grid;
-    grid-template-columns: auto;
-    height: 250px;
-    margin-top: 50px;
-    text-align: center;
-    padding: 30px;
-    grid-gap: 20px;
 
-}
 
 .some img {
     width: 50px;
@@ -480,8 +473,8 @@ nav {
 
 
 
-.logo {
-    width: 50vh;
+.logo img {
+    width: 70%;
     padding-top: 15px;
 }
 
@@ -568,11 +561,29 @@ nav {
 
 @media screen and (min-width: 700px) {
 
+    #instaholder{
+    padding-right: 10vw;
+    padding-left: 10vw;
+}
+#instaoverskrift{
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    padding-top: 15vh;
+    padding-bottom: 3vh;
+}
+#instagrampictures {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1vw;
+    justify-content: center;
+}
+
+
     .quote1 {
         text-align: center;
         font-family: 'Ranga', cursive;
         color: black;
-        margin-top: 25vh;
+        margin-top: 30vh;
         margin-bottom: 4vh;
         font-size: 2rem;
         font-style: italic;
@@ -954,7 +965,7 @@ body {
 @media (max-width: 768px) {
 
     .navbar .logo img {
-        width: 50%;
+        width: 30%;
     flex: 3;
     padding-left: 2vw;
 }
@@ -1027,6 +1038,247 @@ body {
     .navbar label {
       display: none;
     }
+}
+
+/**FOOTER**/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+
+
+.footer-distributed{
+	background: #628DFC;
+    opacity: 0.8;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+}
+
+footer section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Roboto', cursive;
+	margin: 0 0 10px;
+}
+.footer-distributed img{
+	color:  #ffffff;
+	font: normal 36px 'Roboto', cursive;
+	margin: 0 0 10px;
+}
+
+.footer-distributed img span{
+	color:  #5383d3;
+}
+
+.footer-distributed img{
+	color:  #ffffff;
+	font: normal 36px 'Roboto', cursive;
+	margin: 0 0 10px;
+}
+.footer-distributed img{
+	color:  #ffffff;
+	font: normal 36px 'Roboto', cursive;
+	margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  white;
+}
+
+.footer-distributed .footer-company-name{
+	color:  white;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #7c9cef;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  white;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #7c9cef;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
 }
 
 
