@@ -561,6 +561,34 @@ nav {
 
 @media screen and (min-width: 700px) {
 
+    .howtobox1 {
+    margin-bottom: 0 auto;
+    margin-top: 11vw;
+    margin-left: 6vw;
+    margin-right: 11.5vw;
+    text-align: right;
+    letter-spacing: 1.5px;
+}
+
+.howtobox2 {
+    margin-bottom: 0 auto;
+    margin-left: 11.5vw;
+    margin-right: 6vw;
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+    text-align: left;
+    letter-spacing: 1.5px;
+}
+
+.howtobox3 {
+    margin-bottom: 0 auto;
+    margin-left: 6vw;
+    margin-right: 11.5vw;
+    text-align: right;
+    letter-spacing: 1.5px;
+}
+
+
     #instaholder{
     padding-right: 10vw;
     padding-left: 10vw;
@@ -1280,6 +1308,278 @@ footer section {
 		float: none;
 	}
 }
+
+
+/**JESPER KODE**/
+
+.videoheading{
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.videoh2{
+    text-align: center;
+    padding-top: 1vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+#videoholder {
+    display: flex;
+    justify-content: center;
+    padding-top: 4vh;
+
+
+
+}
+
+.video2 {
+    border-radius: 25px;
+    overflow: hidden;
+    z-index: 1;
+    width: 85%;
+    height: 55vw;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+#missionplaceholder1,
+#missionplaceholder2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+    align-items: center;
+}
+
+.img-boks1 {
+
+    text-align: center;
+
+}
+
+.img-boks1 img {
+
+    margin-top: 3vh;
+    background-size: cover;
+    width: 20%;
+    height: auto;
+}
+
+.img-boks2 {
+    text-align: center;
+}
+
+.img-boks2 img {
+    background-size: cover;
+    width: 85%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.img-boks3 {
+    text-align: center;
+}
+
+.img-boks3 img {
+    margin-top: 3vh;
+    background-size: cover;
+    width: 20%;
+    height: auto;
+}
+
+.img-boks4 {
+    text-align: center;
+}
+
+.img-boks4 img {
+    margin-top: 2.5vh;
+    background-size: cover;
+    width: 85%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.missionheading1 {
+    font-size: 1.3rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.missionheading2 {
+    font-size: 1.3rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.missiontext2,
+.missiontext3 {
+    margin-bottom: 0 auto;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.missiontext1{
+    margin-bottom: 0 auto;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    padding-left: 20px;
+}
+
+#wavebreaker2 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+#wavebreaker2 img {
+    padding-top: 10vh;
+    width: 40%;
+}
+
+#turtlebreaker2 {
+    text-align: center;
+    padding: 60px;
+}
+
+#turtlebreaker2 img {
+    width: 40%;
+}
+
+#wrapthebutton #buttonwrapper2{
+    padding-top: 0vh;
+    padding-bottom: 10vh;
+}
+
+@media screen and (min-width: 500px) {}
+
+@media screen and (min-width: 700px) {
+
+
+    .missionheading1 {
+        font-size: 1.3rem;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .missionheading2 {
+        font-size: 1.3rem;
+        padding: 20px;
+        text-align: left;
+    }
+
+    #missionplaceholder1 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 7vh;
+        align-items: center;
+
+    }
+
+    #missionplaceholder2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 7vh;
+        align-items: center;
+
+    }
+
+    .mission1 p {
+        margin: 0;
+    }
+
+    .img-boks2 {
+        width: 100%;
+        height: auto;
+        padding-left: 1vw;
+        padding-right: 0vw;
+    }
+
+    .missionimage {
+        padding: 0px;
+    }
+
+    .mission1 {
+        width: 230%;
+        padding-right: 5vw;
+    }
+
+
+    .missionheading2 {
+        padding: 0px;
+        padding-bottom: 20px;
+    }
+
+    .mission2 p {
+        margin: 0;
+    }
+
+    .img-boks4 {
+        width: 100%;
+        height: auto;
+        padding-right: 1vw;
+        padding-left: 0vw;
+    }
+
+    .missionimage2 {
+        padding: 0px;
+    }
+
+    .mission2 {
+        width: 230%;
+        padding-left: 5vw;
+    }
+
+    .img-boks1 {
+        width: 105%;
+        padding-bottom: 1vh;
+        text-align: left;
+    }
+
+    .img-boks3 {
+        width: 120%;
+        padding-bottom: 1vh;
+        text-align: left;
+    }
+
+
+    .missiontext1,
+    .missiontext2 {
+        margin-bottom: 0 auto;
+        margin-left: 80px;
+        margin-right: 80px;
+        text-align: left;
+        letter-spacing: 1.5px;
+    }
+
+    @media screen and (min-width: 880px) {
+
+        .video2 {
+            width: 70%;
+            height: 45vw;
+        }
+    }
+
+    @media screen and (min-width: 1100px) {
+
+        .video2 {
+            width: 60%;
+            height: 35vw;
+        }
+    }
 
 
 

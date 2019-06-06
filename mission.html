@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+
+
+<body>
+    <div class="header header-fixed">
+        <div class="navbar container">
+            <div class="logo"><a href="forside.html"><img src="img/LastSwab-logo2.png"></a></div>
+            <input type="checkbox" id="navbar-toggle">
+            <label for="navbar-toggle"><i></i></label>
+            <nav class="menu">
+                <ul>
+                    <li><a href="forside.html">Home</a></li>
+                    <li><a href="mission.html">Mission</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--Header-->
+
+    <h1 class="videoheading">Mission</h1>
+    <h2 class="videoh2">Our goal with LastSwab is to eliminate the need for single-use cotton swabs.</h2>
+    <div id="videoholder">
+        <div class="video2">
+            <iframe width="100%" height="100%" text-align="center" src="https://www.youtube.com/embed/h_P_guu1N9U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="wavebreaker2">
+        <img src="images/wave_breaker.png">
+    </div>
+
+    <section id="missionsection">
+
+        <div id="missionplaceholder1">
+            <div class="missionimage">
+                <div class="img-boks4">
+                    <img src="">
+                </div>
+
+            </div>
+            <div class="mission1">
+                <div class="img-boks3">
+                    <img src="">
+                </div>
+                <h2 class="missionheading1"></h2>
+                <p class="missiontext1"></p>
+            </div>
+        </div>
+
+
+        <div id="missionplaceholder2">
+            <div class="missionimage">
+                <div class="img-boks2">
+                    <img src="">
+                </div>
+
+            </div>
+            <div class="mission2">
+                <div class="img-boks1">
+                    <img src="">
+                </div>
+                <h2 class="missionheading2"></h2>
+                <p class="missiontext2"></p>
+            </div>
+        </div>
+
+        <div id="turtlebreaker2">
+            <img src="images/turtlebreaker.png">
+        </div>
+        <div id="wrapthebutton">
+        <div id="buttonwrapper2">
+            <div class="buynow2">
+                <a class="buy2" href="koeb.html">
+                    <p>Buy Now!</p>
+                </a>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <footer class="footer-distributed">
+
+            <div class="footer-left">
+
+
+
+                <p class="footer-links">
+                    <a href="#">Home</a>
+                    ·
+                    <a href="#">Mission</a>
+
+
+                    ·
+                    <a href="#">Contact Us</a>
+
+                </p>
+
+                <p class="footer-company-name">LastSwab © 2019</p>
+
+                <div class="footer-icons">
+
+                    <a href="https://www.facebook.com/lastswab" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/lastswab/" target="_blank"><i class="fa fa-instagram"></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-right">
+
+                <p>Contact Us</p>
+
+                <form action="mailto:hello@lastswab.com" method="post">
+
+                    <input type="text" name="email" placeholder="Email">
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button>Send</button>
+
+                </form>
+
+            </div>
+
+        </footer>
+
+
+
+
+    <script>
+        let mission = {};
+        document.addEventListener("DOMContentLoaded", getJson);
+        async function getJson() {
+            const url = "http://www.philipsengraphics.dk/kea/kea_2/tema_07/Eksamensopgave/wordpress/wp-json/wp/v2/mission/";
+            const missionJson = await fetch(url);
+            mission = await missionJson.json();
+            visIndhold();
+        }
+
+        function visIndhold() {
+            mission.forEach(indhold => {
+                document.querySelector(".img-boks1 img").src = indhold.missionlogo1.guid;
+                document.querySelector(".img-boks3 img").src = indhold.missionlogo2.guid;
+                document.querySelector(".img-boks2 img").src = indhold.missionimg1.guid;
+                document.querySelector(".img-boks4 img").src = indhold.missionimg2.guid;
+                document.querySelector(".missionheading1").innerHTML = indhold.missionheading1;
+                document.querySelector(".missionheading2").innerHTML = indhold.missionheading2;
+                document.querySelector(".missiontext1").innerHTML = indhold.missiontext1;
+                document.querySelector(".missiontext2").innerHTML = indhold.missiontext2;
+            })
+        }
+    </script>
+</body>
+
+</html>
