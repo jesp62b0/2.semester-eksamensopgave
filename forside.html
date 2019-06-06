@@ -15,9 +15,11 @@
 
 <body>
     <!--   NAVBAR TAGET FRA https://codepen.io/biblos/pen/babJvO -->
-    <div class="header header-fixed">
+    <div class="header">
+        <!--parent div der har container nav-->
         <div class="navbar container">
-            <div class="logo"><a href="forside.html"><img src="img/LastSwab-logo2.png"></a></div>
+            <!--Div der omslutter alle nav elementer-->
+            <div class="logo"><a href="forside.html"><img src="img/LastSwab-logo2.png" alt="logo"></a></div>
             <input type="checkbox" id="navbar-toggle">
             <label for="navbar-toggle"><i></i></label>
             <nav class="menu">
@@ -27,14 +29,16 @@
                     <li><a href="produkt.html">Shop LastSwab</a></li>
                 </ul>
             </nav>
+
         </div>
     </div>
 
 
     <div id="splash">
+        <!--Parent div der omslutter alle splash elementer så de kan flexe-->
         <div id="splashimage">
             <div class="splashholder">
-                <img src="" alt="">
+                <img src="" alt="billede1">
             </div>
         </div>
         <div id="splashright">
@@ -58,14 +62,17 @@
     <h2 class="quote1">The Swab That Raised $715k on Kickstarter</h2>
 
     <div id="videowrapper">
+        <!--div der omslutter video-->
 
         <div class="video">
+            <!--Kode taget fra Youtubes del funktion-->
             <iframe width="100%" height="100%" text-align="center" src=" https://www.youtube.com/embed/O_4tt7zykAc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 
     <div id="wavebreaker">
-        <img src="images/wave_breaker.png">
+        <!--div med statisk billede-->
+        <img src="images/wave_breaker.png" alt="wave2">
     </div>
 
 
@@ -73,15 +80,17 @@
 
 
     <section id="info1">
+        <!--Parent div der omslutter alle splash elementer så de kan flexe-->
         <div id="infoplaceholder1">
             <div class="theimage">
                 <div class="imgboks2">
-                    <img src="" alt="">
+                    <img src="" alt="billede2">
                 </div>
             </div>
             <div class="explainer1">
+                <!--Parent div der omslutter alle splash elementer så de kan flexe-->
                 <div class="imgboks1">
-                    <img src="" alt=""> </div>
+                    <img src="" alt="billede3"> </div>
                 <h2 class="infoheading1"></h2>
                 <p class="textboks1"></p>
             </div>
@@ -93,19 +102,19 @@
         <div id="infoplaceholder2">
             <div class="theimage2">
                 <div class="imgboks4">
-                    <img src="" alt="">
+                    <img src="" alt="billede4">
                 </div>
             </div>
             <div class="explainer2">
                 <div class="imgboks3">
-                    <img src="" alt="">
+                    <img src="" alt="billede5">
                 </div>
                 <h2 class="infoheading2"></h2>
                 <p class="textboks2"></p>
             </div>
         </div>
-        <div id="wavebreaker">
-            <img src="images/wave_breaker.png">
+        <div id="wavebreaker2">
+            <img src="images/wave_breaker.png" alt="wave3">
         </div>
 
 
@@ -130,7 +139,7 @@
 
             <div id="theimage3">
                 <div class="imgboks6">
-                    <img src="" alt="">
+                    <img src="" alt="billede6">
                 </div>
             </div>
         </div>
@@ -143,7 +152,7 @@
     <section id="info2">
         <div id="imagewrapper">
             <div class="imgholder1">
-                <img src="" alt="">
+                <img src="" alt="billede7">
             </div>
 
         </div>
@@ -157,7 +166,7 @@
         </div>
     </section>
     <div id="turtlebreaker">
-        <img src="images/turtlebreaker.png">
+        <img src="images/turtlebreaker.png" alt="turtle">
     </div>
 
 
@@ -169,11 +178,11 @@
 
     <div id="featureimages">
         <div class="feature1">
-            <img src="" alt="">
+            <img src="" alt="billede7">
         </div>
     </div>
 
-    <div>
+
 
         <h2 class="quote4"></h2>
 
@@ -187,25 +196,25 @@
 
                 <a href="https://www.instagram.com/lastswab/" target="_blank">
                     <div class="pic1">
-                        <img src="" alt="">
+                        <img src="" alt="billede8">
                     </div>
                 </a>
 
                 <a href="https://www.instagram.com/lastswab/" target="_blank">
                     <div class="pic2">
-                        <img src="" alt="">
+                        <img src="" alt="billede9">
                     </div>
                 </a>
 
                 <a href="https://www.instagram.com/lastswab/" target="_blank">
                     <div class="pic3">
-                        <img src="" alt="">
+                        <img src="" alt="billede10">
                     </div>
                 </a>
 
                 <a href="https://www.instagram.com/lastswab/" target="_blank">
                     <div class="pic4">
-                        <img src="" alt="">
+                        <img src="" alt="billede11">
                     </div>
                 </a>
             </div>
@@ -263,26 +272,37 @@
 
 
         <script>
-            //        function myFunction(x) {
-            // x.classList.toggle("change")
-            // }
+            // Inline script med Json koden.
 
             let forside = {};
+            // Variabel til forside Json.
             document.addEventListener("DOMContentLoaded", getJson);
+            // Eventlistener der sikre html koden er loaded før scripten kalder getJson functionen.
             async function getJson() {
+                //async function der henter vores data fra Jsonfilen
+
                 const url = "http://www.philipsengraphics.dk/kea/kea_2/tema_07/Eksamensopgave/wordpress/wp-json/wp/v2/forside/";
+                //constant med link til vores Json fil.
                 const forsideJson = await fetch(url);
+                //constant der henter eller fetcher vores indhold fra url constanten.
                 forside = await forsideJson.json();
+                // henter indhold ind i koden.
 
                 visIndhold();
+                //kalder vores function der fører indhold ind på deres responsive pladser.
             }
 
             function visIndhold() {
+                //Function der viser indholdet på siden.
                 console.log(forside);
+                //Viser om functionen bliver kaldt i console.
 
                 forside.forEach(indhold => {
+                    //forEach loop der kalder et element af gangen.
                     document.querySelector(".splashholder img").src = indhold.splash.guid;
+                    // querySelector der kalder en specifik klasse og tilføjer billede.
                     document.querySelector(".splashh1").innerHTML = indhold.splashh1;
+                    // querySelector der kalder en specifik klasse og tilføjer tekst.
                     document.querySelector(".splashtekst").innerHTML = indhold.splashtekst;
                     document.querySelector(".infoheading1").innerHTML = indhold.infoheading;
                     document.querySelector(".infoheading2").innerHTML = indhold.infoheading2;
@@ -315,38 +335,6 @@
 
 
             }
-
-
-
-
-            //
-            // function showForside() {
-            // document.querySelector(".splashholder").style.backgroundImage = `url(${forside.splash_image.guid})`;
-            // }
-            //        /* Lånt kode fra W3Schools til vores burgermenu */
-            //        function myFunction(x) {
-            //            x.classList.toggle("change")
-            //        }
-            //
-            //
-            //        /* En function som gør at når man scroller ned på vores side bliver vores header sort
-            //        når man så scroller op igen og rammer toppen bliver den transparent igen*/
-            //        let prevScrollpos = window.pageYOffset;
-            //        window.onscroll = function() {
-            //            let currentScrollPos = window.pageYOffset;
-            //            if (screenTop = currentScrollPos) {
-            //                document.querySelector("header").style.backgroundColor = "rgba(0,0,0,1)";
-            //            } else {
-            //                document.querySelector("header").style.backgroundColor = "rgba(0,0,0,0)"
-            //            }
-            //            prevScrollpos = currentScrollPos;
-            //        }
-            //
-            //        /* Eventlistner som sætter en class på vores mobilmenu og gør vores header sort */
-            //        document.querySelector(".burger-menu").addEventListener("click", () => {
-            //            document.querySelector(".menu-overlay").classList.toggle("menu-transition");
-            //            document.querySelector("header").style.backgroundColor = "black";
-            //        })
         </script>
     </div>
 </body>
