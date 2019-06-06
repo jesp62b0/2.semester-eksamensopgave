@@ -809,6 +809,34 @@ h3 {
 
 /****/
 
+@media screen and (max-width: 700px) {
+    .howtobox1 {
+    margin-bottom: 0 auto;
+    margin-top: 1vw;
+    margin-left: 4vw;
+    margin-right: 25vw;
+    text-align: left;
+    letter-spacing: 1.5px;
+}
+
+.howtobox2 {
+    margin-bottom: 0 auto;
+    margin-left: 4vw;
+    margin-right: 25vw;
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+    text-align: right;
+    letter-spacing: 1.5px;
+}
+
+.howtobox3 {
+    margin-bottom: 0 auto;
+    margin-left: 4vw;
+    margin-right: 25vw;
+    text-align: left;
+    letter-spacing: 1.5px;
+}
+}
 
 @media screen and (min-width: 767px) {
     #splash {
